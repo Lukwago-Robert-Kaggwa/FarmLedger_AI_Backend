@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-hh%3r^^or3hbgj4k_nain=15+l$twa(69x!&=rq!g6*x6$1cl2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "farmledger-ai-backend.onrender.com"
+]
 
 
 # Application definition
@@ -47,7 +49,7 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = 'authuser.User'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
+    "https://farmledger-ai-frontend.onrender.com",
 ]
 
 MIDDLEWARE = [
